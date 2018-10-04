@@ -8,6 +8,7 @@ install:
 
 script:
   - pytest  --cov=app 
+  - coveralls
 
 after_success:
-  - "coveralls"
+  - coveralls
