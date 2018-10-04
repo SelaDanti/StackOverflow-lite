@@ -43,4 +43,4 @@ Kwame Asiago
 
 **Badges**
 
-[![Travis Build Status](https://travis-ci.org/SelaDanti/StackOverflow-lite.svg?branch=ft-register-160887043)](https://travis-ci.org/SelaDanti/StackOverflow-lite)  
+[![Build Status](https://travis-ci.org/SelaDanti/StackOverflow-lite.svg?branch=ft-register-160887043)](https://travis-ci.org/SelaDanti/StackOverflow-lite)  

@@ -18,16 +18,16 @@ class TestUser(unittest.TestCase):
 
 	def test_is_empty(self):
 		test = self.empty_data.add_user
-		self.assertEqual(test,{'error': 'Input empty'}, 405)
+		self.assertEqual(test,({'error': 'Input empty'}, 405))
 
 	def test_is_space(self):
 		test = self.space_data.add_user
-		self.assertEqual(test,{'error': 'input contains only Whitespace)'}, 405)
+		self.assertEqual(test,({'error': 'input contains only Whitespace)'}, 405))
 
 	def test_is_email(self):
 		test = self.not_email.add_user
-		self.assertEqual(test,{'error':'Invalid email'},405)
+		self.assertEqual(test,({'error':'Invalid email'},405))
 
 	def test_correct_data(self):
 		test = self.correct_data.add_user
-		self.assertEqual(test,{'result':'Account created'})
+		self.assertEqual(test,({'result':'Account created'},200))
