@@ -38,9 +38,3 @@ class User(Verifications):
 			return self.check_data()
 		else:
 			return False
-
-	def remove_user(self,id):
-		pass
-
-	def login(self):
-		pass
