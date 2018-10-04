@@ -1,17 +1,17 @@
 language: 'python'
 
 python:
-  -'3.5.2'
+  - '3.5.2'
 
 install:
-  -pip install -r requirements.txt
+  - pip install -r requirements.txt
 
 before_script:
-  -export SETTING='../config/config_test.cfg'
+  - export SETTING='../config/config_test.cfg'
 
 script:
-  -pytest --cov=app
-  -coveralls
+  - pytest --cov=app
+  - coveralls
 
 after_success:
-  -coveralls
+  - coveralls
