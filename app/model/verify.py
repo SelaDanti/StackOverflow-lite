@@ -11,7 +11,7 @@ class Verifications:
 	def is_empty(self,items):
 		for item in items:
 			if not item:
-				self.error = {'result': 'Invalid input(Empty data)'}, 405
+				self.error = {'error': 'Input empty'}, 405
 				return self.error
 		return False
 
@@ -19,7 +19,7 @@ class Verifications:
 	def is_space(self,items):
 		for item in items:
 			if item.isspace() is True:
-				self.error = {'result': 'Invalid input(Whitespace data)'}, 405
+				self.error = {'error': 'input contains only Whitespace)'}, 405
 				return self.error
 		return False
 
@@ -27,7 +27,7 @@ class Verifications:
 	def is_email(self,email):
 		result = re.match('^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$', email)
 		if result is None:
-			self.error = {'result': 'Invalid email'}, 405
+			self.error = {'error': 'Invalid email'}, 405
 			return self.error
 		else:
 			return False
