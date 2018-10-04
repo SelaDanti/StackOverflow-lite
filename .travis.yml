@@ -1,0 +1,14 @@
+language: 'python'
+
+python:
+  -'3.5.2'
+
+before_script:
+  -export SETTING='../config/config_test.cfg'
+
+script:
+  -pytest --cov=app
+  -coveralls
+
+after_success:
+  -coveralls
