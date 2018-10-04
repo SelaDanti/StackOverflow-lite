@@ -42,4 +42,5 @@ PUT /questions/<questionId>/answers/<answerId> Mark an answer as accepted or upd
 Kwame Asiago
 
 **Badges**
-[![Build Status](https://travis-ci.org/SelaDanti/StackOverflow-lite.svg?branch=ft-register-160887043)](https://travis-ci.org/SelaDanti/StackOverflow-lite)
+
+[![Travis Build Status](https://travis-ci.org/SelaDanti/StackOverflow-lite.svg?branch=ft-register-160887043)](https://travis-ci.org/SelaDanti/StackOverflow-lite)  
