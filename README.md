@@ -12,7 +12,7 @@ The API was constracted using python,flask and restplus
 
 **Installation**
 
-Clone the repo to your local machine install a virtual enviroment install the dependacies from terminal run run.py test the endpoint using postman
+Clone the repo to your local machine install a virtual enviroment install the dependacies from terminal run run.py. Test the endpoint using postman
 
 **Features**
 
