@@ -1,16 +1,21 @@
 **StackOverflow-lite**
+
 StackOverflow-lite is a platform where people can ask questions and provide answers
 
 **Motivation**
+
 Stackoverflow-lite is a platform that brings great minds together to solve a problem
 
 **Code style**
+
 The API was constracted using python,flask and restplus
 
 **Installation**
+
 Clone the repo to your local machine install a virtual enviroment install the dependacies from terminal run run.py test the endpoint using postman
 
 **Features**
+
 1. Users can create an account and log in. 
 2. Users can post questions. 
 3. Users can delete the questions they post. 
@@ -19,9 +24,11 @@ Clone the repo to your local machine install a virtual enviroment install the de
 6. Users can accept an answer out of all the answers to his/her question as the preferred answers
 
 **Tests**
+
 The test were carried out from the unittest library. for python version 3.5 and below use py.test to run yur test for python version 3.5 and above use pytest to run your test. To view code coverage use pytest --cov
 
 **EndPoint Functionality**
+
 POST /auth/signup  Register a user   
 POST /auth/login  Login a user   
 GET /questions   Fetch all questions   
@@ -31,4 +38,5 @@ POST /questions/<questionId>/answers  Post an answer to a question
 PUT /questions/<questionId>/answers/<answerId> Mark an answer as accepted or update an answer
 
 **Authors**
+
 Kwame Asiago
