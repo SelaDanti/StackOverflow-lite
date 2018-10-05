@@ -38,3 +38,10 @@ class User(Verifications):
 			return self.check_data()
 		else:
 			return False
+
+	@classmethod
+	def show_all(cls):
+		if len(cls.users) == 0:
+			return ({'result':'Non Found'},404)
+		else:
+			return cls.users
