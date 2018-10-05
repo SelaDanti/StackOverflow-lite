@@ -34,7 +34,7 @@ class TestUser(unittest.TestCase):
 		self.assertEqual(test,({'result':'Account created'},200))
 
 	def test_zero_user_found(self):
-		test = User.show_all()
+		test = User.show_all_user()
 		print(test)
 		self.assertEqual(test,({'result': 'Non Found'}, 404))
 
@@ -42,3 +42,7 @@ class TestUser(unittest.TestCase):
 		self.correct_data.add_user
 		test = len(User.users)
 		self.assertNotEqual(test,0)
+
+	def test_invalid_user_id(self):
+		test = User.show_one_user(-3)
+		self.assertEqual(test,({'result': 'Non Found'}, 404))

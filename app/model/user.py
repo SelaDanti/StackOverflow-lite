@@ -40,8 +40,15 @@ class User(Verifications):
 			return False
 
 	@classmethod
-	def show_all(cls):
+	def show_all_user(cls):
 		if len(cls.users) == 0:
 			return ({'result':'Non Found'},404)
 		else:
 			return cls.users
+
+	@classmethod
+	def show_one_user(cls,id):
+		try:
+			return cls.users[id]
+		except IndexError:
+			return ({'result':'Non Found'},404)
