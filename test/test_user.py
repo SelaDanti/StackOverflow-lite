@@ -46,3 +46,13 @@ class TestUser(unittest.TestCase):
 	def test_invalid_user_id(self):
 		test = User.show_one_user(-3)
 		self.assertEqual(test,({'result': 'Non Found'}, 404))
+
+
+	def test_login_valid(self):
+		self.correct_data.add_user
+		test = User.login('kwame@gmail.com','123')
+		self.assertTrue(test)
+
+	def test_login_invalid(self):
+		test = User.login('kwame@gmail.com','123')
+		self.assertEqual(test,({'result':'Invalid email or password'},401))

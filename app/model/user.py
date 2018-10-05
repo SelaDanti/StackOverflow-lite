@@ -52,3 +52,11 @@ class User(Verifications):
 			return cls.users[id]
 		except IndexError:
 			return ({'result':'Non Found'},404)
+
+	@classmethod
+	def login(cls,email,password):
+		for i in cls.users:
+			if i['email'] == email and i['password'] == password:
+				return True
+				break
+		return ({'result':'Invalid email or password'},401)
